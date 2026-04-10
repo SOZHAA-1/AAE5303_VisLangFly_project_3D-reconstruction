@@ -1,0 +1,48 @@
+{
+  "project_title": "AAE5303 3D Scene Reconstruction",
+  "role": "3D scene reconstruction",
+  "pipeline": [
+    "ROS bag",
+    "image extraction",
+    "COLMAP sparse reconstruction",
+    "OpenSplat",
+    ".ply output"
+  ],
+  "input_bag_windows_path": "C:\\Users\\SOZHAA\\Downloads\\AMtown02.bag",
+  "input_bag_container_path": "/data/AMtown02.bag",
+  "confirmed_image_topic": "/left_camera/image/compressed",
+  "stable_branch": {
+    "name": "amtown02_small",
+    "path": "E:\\amtown02_small",
+    "approx_images": 126,
+    "colmap_complete": true,
+    "opensplat_stable": true,
+    "confirmed_successes": [
+      "d=1, n=100000",
+      "d=2, n=100000"
+    ]
+  },
+  "experimental_branch": {
+    "name": "amtown02_try",
+    "path": "E:\\amtown02_try",
+    "notes": "Earlier notes may call this amtown02_final; current naming uses amtown02_try.",
+    "older_large_version": {
+      "approx_images": 700,
+      "colmap_complete": true,
+      "num_reg_frames": 699,
+      "opensplat_stable": false
+    },
+    "current_reduced_version": {
+      "images": 301,
+      "colmap_complete": true,
+      "num_reg_frames": 300,
+      "best_stable_setting": "d=2, n=3000",
+      "higher_steps_unstable": true
+    }
+  },
+  "gpu_confirmed": true,
+  "notes": [
+    "Use screenshots in assets/ to strengthen the GitHub page.",
+    "Do not upload large .ply or COLMAP binary artifacts unless using Git LFS."
+  ]
+}
