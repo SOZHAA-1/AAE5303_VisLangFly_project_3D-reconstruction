@@ -18,12 +18,3 @@ This file is a lightweight record of how to think about the OpenSplat stage for 
 - reduced branch with 301 images was stable at `d=2, n=3000`
 - `n=4000+` was not reliable in the current WSL/Docker setup
 
-## Recommendation
-
-For a GitHub submission repo, describe:
-- what worked
-- what failed
-- why it failed
-- how the reduced branch helped identify the stability boundary
-
-That is usually stronger than uploading every raw artifact.
