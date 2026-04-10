@@ -75,12 +75,3 @@ This is because COLMAP reports the frame count with zero-based indexing.
 ### Practical outcome in this project
 - `amtown02_small`: both `d=1` and `d=2` were successful at high step counts
 - `amtown02_try`: `d=2` was the practical stable setting, with best stable confirmation around `n=3000`
-
-## GPU confirmation
-
-The GPU route was not assumed; it was checked explicitly.
-
-Observed signs of a real GPU run:
-- `nvidia-smi` showed the `/opensplat` process
-- GPU utilization was high during training
-- VRAM usage was consistent with an actual run
