@@ -91,7 +91,6 @@ Two versions were tested here:
 - OpenSplat was stable up to roughly **`d=2, n=3000`**
 - runs at `n=4000+` were not reliable in the current setup
 
-This branch is useful because it shows the trade-off between scene size, training steps, and system resources.
 
 ## Main results
 
@@ -109,20 +108,6 @@ This branch is useful because it shows the trade-off between scene size, trainin
 - current limitation appears at higher training steps because of WSL/Docker resource pressure
 
 A more structured summary is available in [`results/RESULT_SUMMARY.md`](results/RESULT_SUMMARY.md).
-
-## Why this project is meaningful
-
-Before this course, I had almost no background in computer vision, SLAM, 3D reconstruction, or this kind of engineering workflow.  
-This project forced me to learn not only the topic itself, but also the practical side of:
-
-- command-line tools
-- Docker and WSL
-- ROS bag handling
-- COLMAP command sequencing
-- result checking and failure diagnosis
-- GPU workload validation
-
-For me, the most important achievement is not only the final `.ply` files, but also the fact that I can now follow and debug a full reconstruction pipeline from raw data to 3D output.
 
 ## Repository layout
 
@@ -155,16 +140,6 @@ For me, the most important achievement is not only the final `.ply` files, but a
 - `scripts/`  
   Example commands and reusable command templates
 
-## Suggested screenshots to add later
-
-This repository will look much stronger on GitHub if you add 3 to 5 screenshots in `assets/` and then link them in the README.  
-The best ones would be:
-
-1. bag playback / extraction stage
-2. COLMAP sparse reconstruction view
-3. `nvidia-smi` showing `/opensplat`
-4. `amtown02_small` final point cloud
-5. `amtown02_try` stable test result
 
 ## Known limitations
 
@@ -185,12 +160,3 @@ Example command templates are provided in:
 - [`scripts/colmap_commands_windows_powershell.ps1`](scripts/colmap_commands_windows_powershell.ps1)
 - [`scripts/opensplat_command_notes.md`](scripts/opensplat_command_notes.md)
 
-## Final note
-
-This repository is meant to be a **personal, clean, GitHub-ready reconstruction submission** rather than a raw dump of every intermediate file.  
-Large artifacts such as `.ply`, `.db`, and COLMAP binary outputs should usually be kept **out of GitHub** unless Git LFS is used.
-
-If I later add selected screenshots and short captions, this repo will be ready to serve as both:
-
-- a submission-facing project page
-- a compact technical record of the reconstruction work
