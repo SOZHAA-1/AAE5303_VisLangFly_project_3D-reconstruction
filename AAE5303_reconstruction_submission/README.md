@@ -114,7 +114,6 @@ A more structured summary is available in [`results/RESULT_SUMMARY.md`](results/
 ```text
 .
 ├── README.md
-├── assets/
 ├── docs/
 ├── results/
 └── scripts/
