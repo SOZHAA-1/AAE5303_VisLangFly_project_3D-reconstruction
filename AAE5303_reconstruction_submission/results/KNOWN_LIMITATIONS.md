@@ -18,14 +18,3 @@ The issue appeared later, during OpenSplat, which means the reconstruction pipel
 
 The stable `amtown02_small` branch confirms the pipeline works.  
 However, that success does not automatically guarantee that a larger scene will remain stable under the same local resource conditions.
-
-## 4. GitHub should not be used as raw artifact storage
-
-A good GitHub submission page should document:
-- method
-- reasoning
-- result summary
-- screenshots
-- command templates
-
-It should not become a dump of all large intermediate artifacts.
